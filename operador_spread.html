@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+		<script type="text/babel">
+
+		let filmes = ['Star Wars', 'The Lord of the Rings', 'Harry Potter']
+		let series = ['Two and a Half Men', 'How I Met your Mother']
+		let animes = ['Naruto', 'Dragon Ball', 'Pokémon']
+
+		//let todos = [filmes, series, animes]
+		//let todos = ['Naruto', filmes, 'Dragon Ball', series, 'Pokémon']
+		let todos = [... animes, ...filmes, ...series]
+
+		console.log(todos)
+
+		</script>
+
+	</head>
+	<body>
+
+		<div id="output"></div>
+		
+	</body>
+</html>
