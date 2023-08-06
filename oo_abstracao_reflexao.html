@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+		<script type="text/babel">
+
+			//um software de marcenaria
+			//cadeira e sofa
+
+			//paradigma procedural
+			//cadeira
+			// let qtd_pernas = 4
+			// let giratoria = false
+			// let giratoria = true
+			// let cor = 'azul'
+
+			//array de cadeiras
+			/*
+			let cadeiras = Array()
+
+			cadeiras[0] = Array()
+			cadeiras[0]['qtd_pernas'] = 4
+			cadeiras[0]['giratoria'] = false
+			cadeiras[0]['cor'] = 'azul'
+
+			cadeiras[1] = Array()
+			cadeiras[1]['qtd_pernas'] = 1
+			cadeiras[1]['giratoria'] = true
+			cadeiras[1]['cor'] = 'vermelha'
+
+			// console.log(cadeiras)
+			
+			function girar_cadeira(indice) {
+				if (cadeiras[indice]['giratoria'] === true) {
+					console.log('girou')
+				} else {
+					console.log('cadeira não é giratória')
+				}
+			}
+
+			function adicionar_cadeira(qtd_pernas, giratoria, cor) {
+				let cadeira = Array()
+
+				cadeira['qtd_pernas'] = qtd_pernas
+				cadeira['giratoria'] = giratoria
+				cadeira['cor'] = cor
+
+				cadeiras.push(cadeira)
+			}
+
+			adicionar_cadeira(3, false, 'verde')
+
+			console.log(cadeiras)
+			// girar_cadeira(1)
+			*/
+
+			//paradigma OO *****************
+			class cadeira {
+				constructor(qtd_pernas, giratoria, cor) {
+					this.qtd_pernas = qtd_pernas
+					this.giratoria = giratoria
+					this.cor = cor
+				}
+
+				girarCadeira() {
+					if(this.giratoria === true) {
+						console.log('A cadeira É giratória.')
+					} else {
+						console.log('A cadeira NÃO é giratória.')
+					}
+				}
+			}
+
+			// let novaCadeira1 = new cadeira(4, false, 'azul')
+			// let novaCadeira2 = new cadeira(1, true, 'vermelho')
+
+			let cadeiras = Array()
+
+			cadeiras.push(new cadeira(4, false, 'azul'))
+			cadeiras.push(new cadeira(1, true, 'vermelho'))
+
+			console.log(cadeiras)
+			// console.log(novaCadeira1)
+			// novaCadeira1.girarCadeira()
+			// console.log(novaCadeira2)
+			// novaCadeira2.girarCadeira()
+ 
+		</script>
+
+	</head>
+	<body>
+
+		<div id="output"></div>
+		
+	</body>
+</html>
