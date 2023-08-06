@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+		<script type="text/babel">
+
+		class sofa {
+
+			//atributos
+			constructor(qtd_lugares, reclinavel, cor) {
+			this.qtd_lugares = qtd_lugares
+			this.reclinavel = reclinavel
+			this.cor = cor
+			}
+
+			//metodos
+			reclinavelOuNao(reclinavel) {
+				if (this.reclinavel === true) {
+					console.log('O sofá É reclinável.')
+				} else {	
+					console.log('O sofá NÃO é reclinável.')
+				}
+			} 
+		}
+
+		// let novoSofa1 = new sofa(3, false, 'preto')
+		// let novoSofa2 = new sofa(4, true, 'marrom')
+
+		let novoSofa = Array()
+		novoSofa.push(new sofa(3,false, 'preto'))
+		novoSofa.push(new sofa(4,true, 'marrom'))
+
+		// console.log(novoSofa2)  
+		// console.log(novoSofa1)
+		console.log(novoSofa)
+		novoSofa[1].reclinavelOuNao()
+		novoSofa[0].reclinavelOuNao()
+		
+		</script>
+
+	</head>
+	<body>
+
+		<div id="output"></div>
+		
+	</body>
+</html>
